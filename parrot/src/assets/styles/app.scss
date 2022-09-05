@@ -1,0 +1,18 @@
+$theme-color:(
+    "primary-color": #673ab7,
+    "light-primary-color":#d1c4e9,
+    "dark-primary-color": #512da8,
+    "accent-color":#8bc34a,
+    "divider-color":#bdbdbd,
+    "text-icons":#fff,
+    "primary-text":#212121,
+    "secondary-text":#757575,
+    
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
