@@ -1,5 +1,5 @@
 # HANDS-ON-4
-## A plataforma Parrot permite que os usuários façam publicações que fique visível para toda comunidade de condominos.
+## A plataforma Parrot permite que os usuários façam publicações que fique visível para toda comunidade de condôminos.
 
 
 ### *instalações para funcionalidades*
