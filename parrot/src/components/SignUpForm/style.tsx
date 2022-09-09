@@ -16,7 +16,7 @@ export const Container = styled.div`
     @media (min-width: 460px) {
         h1 {
             font-size: 1.5rem;
-            margin-bottom:  3.4rem;
+            margin-bottom:  3rem;
         }
     }
 `
@@ -61,7 +61,7 @@ export const StyledButton = styled(Button)`
         width: 69%;
         font-size: 1.1rem;
         color: #000;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, , 0.25));
         border-radius: 10px;
         margin: 0.5rem 0;
         &:after {

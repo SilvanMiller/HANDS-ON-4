@@ -14,8 +14,7 @@ function Routes(): JSX.Element {
                 <Route path="/feed" element={
                     <RequireAuth>
                         <Feed />
-                    </RequireAuth>
-                } />
+                    </RequireAuth> } />
                 <Route path="/userprofile" element={<UserProfile />} />
             </Wrapper>
         </BrowserRouter>

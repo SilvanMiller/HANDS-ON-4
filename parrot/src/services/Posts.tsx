@@ -1,4 +1,4 @@
-import { baseUrl as api, baseUrlHeroku } from "./config";
+import { baseUrl as api } from "./config";
 import { Post, User } from "../@types";
 
 export const renderPosts = (): Promise<Post[]> => {

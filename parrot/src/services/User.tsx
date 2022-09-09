@@ -1,4 +1,4 @@
-import { baseUrl as api, baseUrlHeroku } from "./config";
+import { baseUrl as api } from "./config";
 import { SignIn, User } from "../@types";
 
 // export interface NewUser {

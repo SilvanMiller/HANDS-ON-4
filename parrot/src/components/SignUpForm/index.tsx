@@ -1,4 +1,5 @@
 import React from 'react';
+import { baseUrl as api } from "../../services/config";
 import { ErrorMessage, Formik } from 'formik';
 import { addUser } from '../../services/User';
 import * as Yup from 'yup';
@@ -19,7 +20,8 @@ const RegisterUserForm: React.FC = () => {
         password: Yup.string().required('Campo Senha é obrigatório').min(6, 'Senha deve ter pelo menos 6 caracteres.'),
         confirmaSenha: Yup.string().required('Campo Confirmar Senha é obrigatório').oneOf([Yup.ref('password'), null], 'As senhas digitadas devem ser iguais.'),
         apartment: Yup.string().required('Campo Unidade/Apartamento é obrigatório'),
-        foto: Yup.string().required('Link para foto é obrigatório')
+        foto: Yup.string().notRequired(),
+        //foto: Yup.string().Required('Link para foto é obrigatório')
 
     })
 
@@ -38,7 +40,7 @@ const RegisterUserForm: React.FC = () => {
             onSubmit={async (values, { resetForm }) => {
                 const { accessToken, user } = await addUser({ ...values, permission: 1 })
                 dispatch(logIn({ accessToken, permission: user.permission, user }))
-                //api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
+                api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`
                 resetForm();
             }}
         >

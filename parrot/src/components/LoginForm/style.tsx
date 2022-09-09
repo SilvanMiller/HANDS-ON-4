@@ -16,7 +16,7 @@ export const Container = styled.div`
     @media (min-width: 460px) {
         h1 {
             font-size: 1.2rem;
-            margin-bottom:  3.2rem;
+            margin-bottom:  2.3rem;
         }
     }
 `
@@ -33,7 +33,7 @@ export const LoginForm = styled(Form)`
 
 export const LoginFormGroup = styled(Form.Group)`
     width: 71%;
-    padding: 0.20rem;
+    padding: 0.17rem;
     @media (min-width: 460px) { 
         padding-bottom: 0.8rem;
     }
@@ -41,7 +41,7 @@ export const LoginFormGroup = styled(Form.Group)`
 
 export const LoginFormInput = styled(Form.Control)`
     border: 1px solid #909090;
-    border-radius: 10px;
+    border-radius: 12px;
     &::placeholder {
         text-align:center;
         font-size: 1.0rem;
@@ -62,8 +62,8 @@ export const StyledButton = styled(Button)`
         font-size: 1.1rem;
         color: #000;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 10px;
-        margin: 0.5rem 0;
+        border-radius: 12px;
+        margin: 0.3rem 0;
         &:after {
             content: '';
             position: absolute;
@@ -73,7 +73,7 @@ export const StyledButton = styled(Button)`
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
+            border-radius: 12px;
             transform: scaleX(0);
             transform-origin: right;
             transition: transform 300ms ease-in;
@@ -92,7 +92,7 @@ export const StyledButton = styled(Button)`
         }
         @media (min-width: 460px) {
             font-size: 1.5rem;
-            margin: 2rem 0;
+            margin: 1.1rem 0;
         }
 `
 export const StyledErrorMessage = styled.div`
@@ -101,9 +101,9 @@ export const StyledErrorMessage = styled.div`
 `
 
 export const SignUpLink = styled.div`
-        margin: 2rem 0;
+        margin: 2.1rem 0;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     a {
         text-decoration: none;
         color: #555555;
