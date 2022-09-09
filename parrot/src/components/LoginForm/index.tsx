@@ -32,8 +32,7 @@ const FormLogin: React.FC = () => {
             onSubmit={async values => {
                 const { accessToken, user } = await signInUser(values);
                 dispatch(logIn({ accessToken, permission: user.permission, user }));
-                //@ts-ignore
-                baseUrl.defaults.headers["Authorization"] = `Bearer ${accessToken}`
+                api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`
                 navigate("/feed")
             }}
         >
